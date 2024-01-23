@@ -29,7 +29,6 @@
       border-width="3px"
       border-color="#eeeeee"
     ></el-divider>
-    <!-- <stepBar></stepBar> -->
     <div class="w-20%">
       <el-table :data="tableData1" border style="width: 100%; height: 60%">
         <el-table-column prop="Name" label="Name" />
@@ -58,6 +57,49 @@ interface Tree {
 const handleNodeClick = (data: Tree) => {
   console.log(data)
 }
+
+const tableData1 = [
+  {
+    Name: '起始频率',
+    value: 10,
+    notes: 'GHz'
+  },
+  {
+    Name: '截止频率',
+    value: 20,
+    notes: 'GHz'
+  },
+  {
+    Name: '带宽',
+    value: 10,
+    notes: 'GHz'
+  },
+  {
+    Name: '通带增益',
+    value: -1,
+    notes: 'dB'
+  },
+  {
+    Name: '阻带抑制',
+    value: -20,
+    notes: 'dB'
+  },
+  {
+    Name: '群延迟',
+    value: 1,
+    notes: 'deg'
+  },
+  {
+    Name: '阻抗匹配',
+    value: 50,
+    notes: 'Ω（欧姆）'
+  },
+  {
+    Name: '拓扑结构',
+    value: "LPF1",
+    notes: ''
+  }
+]
 
 const data: Tree[] = [
   {
